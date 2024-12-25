@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
+    <title>Find Cheap 4080 Laptops</title>
+    <style>
+        :root {
+            --background-color: #f4f4f9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .laptop-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .laptop-item {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .laptop-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .laptop-item p {
+            margin: 5px 0;
+        }
+        .laptop-item a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cheap 4080 Laptop Deals in the USA</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to our curated list of affordable laptops with the RTX 4080 GPU available in the USA. Check out the options below:</p>
+        <ul class="laptop-list" id="laptop-list">
+            <!-- Laptop entries will be dynamically generated here -->
+        </ul>
+        <p>Note: Prices and availability are subject to change. Please click on the links for the most accurate and up-to-date information.</p>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Cheap 4080 Laptops USA. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const laptops = [
+            { name: 'Brand Model XYZ', price: '$2,499', url: 'https://example.com/deal-xyz' },
+            { name: 'Brand Model ABC', price: '$2,699', url: 'https://example.com/deal-abc' }
+        ];
+
+        const laptopList = document.getElementById('laptop-list');
+
+        laptops.forEach(laptop => {
+            const listItem = document.createElement('li');
+            listItem.classList.add('laptop-item');
+
+            listItem.innerHTML = `
+                <h3>${laptop.name}</h3>
+                <p>Price: ${laptop.price}</p>
+                <p><a href="${laptop.url}" target="_blank">View Deal</a></p>
+            `;
+
+            laptopList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
